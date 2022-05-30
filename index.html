@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/d8ba1d0437.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="checkBox" />
+        <label for="checkBox" class="checkButton">
+          <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">GetPassword</label>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="mainHeading">
+      <h1>Generate A Secure Password</h1>
+      <p>Use Our Password Generator To Generate Secure Password</p>
+    </div>
+    <div class="passwordBox">
+      <input type="text" id="result" class="passBox" spellcheck="false" />
+      <button class="copyToClipboard" id="copyToClipBoard">
+        <i class="fa-solid fa-copy icon"></i>
+      </button>
+    </div>
+    <div class="customizePass">
+      <h1>Customize Your Password</h1>
+      <hr />
+
+      <div class="checkBoxes" id="checkBoxes">
+        <div class="setting">
+          <label>Password Length</label>
+          <input type="number" id="length" class="numChk" value="8" />
+        </div>
+        <div class="setting">
+          <label>Include Uppercase</label>
+          <input type="checkbox" id="upperCheck" class="chk" checked />
+        </div>
+        <div class="setting">
+          <label>Include Lowercase</label>
+          <input type="checkbox" id="lowerCheck" class="chk" checked />
+        </div>
+        <div class="setting">
+          <label>Include Numbers</label>
+          <input type="checkbox" id="numberCheck" class="chk" checked />
+        </div>
+        <div class="setting">
+          <label>Include Symbols</label>
+          <input type="checkbox" id="symbolCheck" class="chk" checked />
+        </div>
+      </div>
+      <div class="genPassBtn">
+        <button class="genPass" id="genPass">Generate Password</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
